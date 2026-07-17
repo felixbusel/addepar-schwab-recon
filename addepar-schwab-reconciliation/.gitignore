@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------------------
+# Data protection: never commit real custodian or portfolio data.
+# Only the synthetic files under sample_data/ are allowed.
+# ---------------------------------------------------------------------------
+*.ULT
+*.ULN
+*.UGL
+*.xlsx
+*.xls
+Schwab_Clean_*.csv
+output/
+
+# ...but do allow the synthetic sample set
+!sample_data/
+!sample_data/*.ULT
+!sample_data/*.ULN
+!sample_data/*.xlsx
+
+# Environment / secrets
+.env
+.envrc
+
+# ---------------------------------------------------------------------------
+# Standard Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[codz]
+*$py.class
+*.so
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv
+env/
+venv/
+ENV/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints
+
+# IDEs
+.idea/
+.vscode/
